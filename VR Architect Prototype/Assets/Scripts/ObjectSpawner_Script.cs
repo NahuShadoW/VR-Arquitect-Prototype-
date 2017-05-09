@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectSpawnerScript : MonoBehaviour {
+public class ObjectSpawner_Script : MonoBehaviour {
 
 
     public void InstantiateObject(GameObject obj) {
