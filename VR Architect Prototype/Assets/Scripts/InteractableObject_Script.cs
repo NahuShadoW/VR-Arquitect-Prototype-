@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableObject_Script : MonoBehaviour {
+public class InteractableObject_Script : MonoBehaviour
+{
 
     [SerializeField]
     GameObject interactableItemCanvasGO;
     public bool isCanvasActive = false;
 
-
-   
     public void ToggleCanvas()
     {
-        if (isCanvasActive)
+        if (!isCanvasActive)
         {
             interactableItemCanvasGO.SetActive(true);
-            isCanvasActive = false;
+            isCanvasActive = true;
         }
         else
         {
             interactableItemCanvasGO.SetActive(false);
-            isCanvasActive = true;
+            isCanvasActive = false;
         }
     }
 }

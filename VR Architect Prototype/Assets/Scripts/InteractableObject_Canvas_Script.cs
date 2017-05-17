@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class InteractableObject_Canvas_Script : MonoBehaviour {
 
-    [SerializeField]
     GameObject PlayerRef;
     Transform canvasTransform;
     float startDistance;
 
     private void Start()
     {
+        PlayerRef = GameObject.FindGameObjectWithTag("Player");
         canvasTransform = this.transform;
         startDistance = canvasTransform.position.magnitude;
     }

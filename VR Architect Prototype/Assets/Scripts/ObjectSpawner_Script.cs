@@ -11,6 +11,6 @@ public class ObjectSpawner_Script : MonoBehaviour
 
     public void InstantiateObject(GameObject obj)
     {
-        Instantiate(obj, dummy.transform.position, Quaternion.identity);
+        Instantiate(obj/*, dummy.transform.position, Quaternion.identity*/);
     }
 }

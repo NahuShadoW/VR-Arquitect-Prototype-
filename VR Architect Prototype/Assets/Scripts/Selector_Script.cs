@@ -15,8 +15,7 @@ public class Selector_Script : MonoBehaviour
     public PointerEventData data;
     public GameObject RaycastEndPoint;
     RaycastHit hit;
-    [SerializeField]
-    public float timer;
+    float timer;
 
 
     private void Start()
@@ -46,7 +45,6 @@ public class Selector_Script : MonoBehaviour
                 var a = hit.transform.GetComponentInChildren<InteractableObject_Script>();
                 a.ToggleCanvas();
                 timer = Time.time + 1f;
-                print("InteractableObject");
             }
         }
         else
