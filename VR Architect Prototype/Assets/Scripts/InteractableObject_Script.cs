@@ -4,22 +4,45 @@ using UnityEngine;
 
 public class InteractableObject_Script : MonoBehaviour
 {
+    private Valve.VR.EVRButtonId gripButton = Valve.VR.EVRButtonId.k_EButton_Grip;
+    private Valve.VR.EVRButtonId triggerButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
+    private SteamVR_Controller.Device controller { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
+    private SteamVR_TrackedObject trackedObj;
 
-    [SerializeField]
-    GameObject interactableItemCanvasGO;
-    public bool isCanvasActive = false;
 
-    public void ToggleCanvas()
+    public void Start()
     {
-        if (!isCanvasActive)
+        trackedObj = GetComponent<SteamVR_TrackedObject>();
+    }
+
+
+    private void Update()
+    {
+        if (controller.GetPressDown(gripButton))
         {
-            interactableItemCanvasGO.SetActive(true);
-            isCanvasActive = true;
+            print("NOMAMESGRIP");
         }
-        else
+        if (controller.GetPressDown(triggerButton))
         {
-            interactableItemCanvasGO.SetActive(false);
-            isCanvasActive = false;
+            print("NOMAMESTRIGGER");
         }
     }
+
+    //[SerializeField]
+    //GameObject interactableItemCanvasGO;
+    //public bool isCanvasActive = false;
+
+    //public void ToggleCanvas()
+    //{
+    //    if (!isCanvasActive)
+    //    {
+    //        interactableItemCanvasGO.SetActive(true);
+    //        isCanvasActive = true;
+    //    }
+    //    else
+    //    {
+    //        interactableItemCanvasGO.SetActive(false);
+    //        isCanvasActive = false;
+    //    }
+    //}
 }

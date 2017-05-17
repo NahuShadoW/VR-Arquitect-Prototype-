@@ -43,7 +43,7 @@ public class Selector_Script : MonoBehaviour
             if (Input.GetMouseButton(0) && timer < Time.time)
             {
                 var a = hit.transform.GetComponentInChildren<InteractableObject_Script>();
-                a.ToggleCanvas();
+                //a.ToggleCanvas();
                 timer = Time.time + 1f;
             }
         }
