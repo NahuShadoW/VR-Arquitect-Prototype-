@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class LaserScript : MonoBehaviour
 {
@@ -9,7 +11,8 @@ public class LaserScript : MonoBehaviour
 
     private SteamVR_Controller.Device Controller { get { return SteamVR_Controller.Input((int)trackedObj.index); } }
 
-
+    float timer;
+    public PointerEventData data;
     // 1
     public GameObject laserPrefab;
     // 2
@@ -83,7 +86,9 @@ public class LaserScript : MonoBehaviour
                 // 3
                 shouldTeleport = true;
             }
-        }
+          
+           
+}
         else // 3
         {
             laser.SetActive(false);
@@ -94,7 +99,9 @@ public class LaserScript : MonoBehaviour
         {
             Teleport();
         }
-    }
+
+   
+}
 
     private void Teleport()
     {
@@ -110,4 +117,5 @@ public class LaserScript : MonoBehaviour
         cameraRigTransform.position = hitPoint + difference;
     }
 
+  
 }

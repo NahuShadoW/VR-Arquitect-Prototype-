@@ -28,21 +28,21 @@ public class InteractableObject_Script : MonoBehaviour
         }
     }
 
-    //[SerializeField]
-    //GameObject interactableItemCanvasGO;
-    //public bool isCanvasActive = false;
+    //[serializefield]
+    //gameobject interactableitemcanvasgo;
+    //public bool iscanvasactive = false;
 
-    //public void ToggleCanvas()
+    //public void togglecanvas()
     //{
-    //    if (!isCanvasActive)
+    //    if (!iscanvasactive)
     //    {
-    //        interactableItemCanvasGO.SetActive(true);
-    //        isCanvasActive = true;
+    //        interactableitemcanvasgo.setactive(true);
+    //        iscanvasactive = true;
     //    }
     //    else
     //    {
-    //        interactableItemCanvasGO.SetActive(false);
-    //        isCanvasActive = false;
+    //        interactableitemcanvasgo.setactive(false);
+    //        iscanvasactive = false;
     //    }
     //}
 }

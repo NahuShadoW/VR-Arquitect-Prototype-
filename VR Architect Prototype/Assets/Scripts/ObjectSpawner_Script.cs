@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class ObjectSpawner_Script : MonoBehaviour
 {
+    
     [SerializeField]
-    GameObject playerRef;
-    [SerializeField]
-    GameObject dummy;
+    GameObject Spawner;
+    
 
     public void InstantiateObject(GameObject obj)
     {
-        Instantiate(obj/*, dummy.transform.position, Quaternion.identity*/);
+        Vector3 position = Spawner.transform.position;
+        obj.transform.position = position;
+        Instantiate(obj);
+        
+          
     }
 }
