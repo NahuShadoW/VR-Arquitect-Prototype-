@@ -32,6 +32,7 @@ public class scale_camera_script : MonoBehaviour
             LeftController = controllers[1];
             RightController = controllers[0];
         }
+        //--------------------------------------------------------------------------
         if (LeftControllerEvents.buttonOnePressed && RightControllerEvents.buttonOnePressed && RightController != null)
         {
             distanceLR = (Vector3.Distance(RightController.transform.position, LeftController.transform.position));
