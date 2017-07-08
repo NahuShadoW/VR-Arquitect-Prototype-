@@ -5,10 +5,18 @@ using UnityEngine.UI;
 
 public class PhysicsMenu_Script : MonoBehaviour
 {
-
-    public bool isGravityOn = true;
-    public bool isKinematicOn = true;
-    public bool isColliderOn = true;
+    [SerializeField]
+    Toggle gravityToggle;
+    [SerializeField]
+    Toggle kinematicsToggle;
+    [SerializeField]
+    Toggle collidersToggle;
+    [SerializeField]
+    public bool isGravityOn;
+    [SerializeField]
+    public bool isKinematicOn;
+    [SerializeField]
+    public bool isColliderOn;
 
     public void ToggleGravity()
     {
@@ -22,7 +30,7 @@ public class PhysicsMenu_Script : MonoBehaviour
             else
             {
                 print("Los colliders estan desactivados, la gravedad no se puede activar");
-                GameObject.Find("GravityToggle").GetComponent<Toggle>().isOn = false;
+                gravityToggle.isOn = false;
             }
         }
         else
@@ -68,6 +76,11 @@ public class PhysicsMenu_Script : MonoBehaviour
                 {
                     bc.enabled = true;
                 }
+
+                foreach (MeshCollider meshcol in obj.GetComponentsInChildren<MeshCollider>())
+                {
+                    meshcol.enabled = true;
+                }
             }
             isColliderOn = true;
             objs = null;
@@ -83,6 +96,11 @@ public class PhysicsMenu_Script : MonoBehaviour
                     {
                         bc.enabled = false;
                     }
+
+                    foreach (MeshCollider meshcol in obj.GetComponentsInChildren<MeshCollider>())
+                    {
+                        meshcol.enabled = false;
+                    }
                 }
                 isColliderOn = false;
                 objs = null;
@@ -90,7 +108,7 @@ public class PhysicsMenu_Script : MonoBehaviour
             else
             {
                 print("Gravedad activada, los colliders no se pueden desactivar");
-                GameObject.Find("collidersToggle").GetComponent<Toggle>().isOn = true;
+                collidersToggle.isOn = true;
             }
         }
     }

@@ -1,0 +1,147 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     3019 MB
+    Driver:   22.21.13.8253
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.VR.dll (this message is harmless)
+Loading C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\UnityEngine.VR.dll into Unity Child Domain
+- Completed reload, in  0.208 seconds
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Motts\Documents\VR-Arquitect-Prototype-\VR Architect Prototype\Build\VR Sample Scene_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+OpenVR initialized!
+ 
+(Filename:  Line: 381)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+UnloadTime: 0.784990 ms
+Connected to oculus:WMHD30354002FB
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Material:Internal_CreateWithShader (UnityEngine.Material,UnityEngine.Shader)
+  at UnityEngine.Material..ctor (UnityEngine.Shader shader) [0x00000] in <filename unknown>:0 
+  at OBJLoader.LoadMTLFile (System.String fn) [0x00000] in <filename unknown>:0 
+  at OBJLoader.LoadOBJFile (System.String fn) [0x00000] in <filename unknown>:0 
+  at ObjectImporter.buscarObjetosEnCarpeta () [0x00000] in <filename unknown>:0 
+  at ObjectImporter.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2248 -> priority: 1 
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+The referenced script on this Behaviour (Game Object 'InteractCanvas (1)') is missing!
+ 
+(Filename:  Line: 1754)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:GetComponentsForListInternal (System.Type,object)
+  at UnityEngine.Component.GetComponents[BaseInputModule] (System.Collections.Generic.List`1 results) [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.EventSystem.UpdateModules () [0x00000] in <filename unknown>:0 
+  at UnityEngine.EventSystems.BaseInputModule.OnDisable () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OpenVR Shutdown
+ 
+(Filename:  Line: 815)
+

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,36 +19,52 @@ public class ObjectSpawner_Script : MonoBehaviour
 
     public void InstantiateObject(GameObject obj)
     {
-        Vector3 position = Spawner.transform.position;
-        obj.transform.position = position;
-        var gameObj = Instantiate(obj);
-        //--------------------------------------------------------------------------
-        if (physic.isColliderOn)
+        try
         {
-            var colliders = gameObj.GetComponents<BoxCollider>();
-            foreach (BoxCollider col in colliders)
+            Vector3 position = new Vector3(Spawner.transform.position.x, 0.5f, Spawner.transform.position.z);
+            var gameObj = Instantiate(obj, position, Quaternion.identity);
+            gameObj.tag = "InteractableObject";
+            //--------------------------------------------------------------------------
+            if (physic.isColliderOn)
             {
-                col.enabled = true;
+                var colliders = gameObj.GetComponents<BoxCollider>();
+                foreach (BoxCollider col in colliders)
+                {
+                    col.enabled = true;
+                }
+            }
+            else
+            {
+                var colliders = gameObj.GetComponents<BoxCollider>();
+                foreach (BoxCollider col in colliders)
+                {
+                    col.enabled = false;
+                }
+            }
+            //--------------------------------------------------------------------------
+            if (physic.isKinematicOn)
+            {
+                Rigidbody rb = gameObj.GetComponent<Rigidbody>();
+                rb.isKinematic = true;
+            }
+            else
+            {
+                Rigidbody rb = gameObj.GetComponent<Rigidbody>();
+                rb.isKinematic = false;
             }
         }
-        else
+        catch (Exception e)
         {
-            var colliders = gameObj.GetComponents<BoxCollider>();
-            foreach (BoxCollider col in colliders)
-            {
-                col.enabled = false;
-            }
+            print(e);
         }
-        //--------------------------------------------------------------------------
-        if (physic.isKinematicOn)
+    }
+
+    public void DeleteAllObjects()
+    {
+        var objs = GameObject.FindGameObjectsWithTag("InteractableObject");
+        foreach (var obj in objs)
         {
-            Rigidbody rb = gameObj.GetComponent<Rigidbody>();
-            rb.isKinematic = true;
-        }
-        else
-        {
-            Rigidbody rb = gameObj.GetComponent<Rigidbody>();
-            rb.isKinematic = false;
+            Destroy(obj, 0.2f);
         }
     }
 }

@@ -21,6 +21,6 @@ public class InteractableObject_Canvas_Script : MonoBehaviour
 
     private void FixedUpdate()
     {
-        this.transform.LookAt(2 * transform.position - PlayerRef.transform.position);
+        //this.transform.LookAt(2 * transform.position - PlayerRef.transform.position);
     }
 }

@@ -1,0 +1,18 @@
+# Exported from 3D Builder
+
+newmtl 02___Default
+Kd 0.000000 0.000000 0.000000
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+map_Kd 572815-01-embed.jpg.01.jpg
+
+newmtl Material__25
+Kd 0.584314 0.584314 0.584314
+
+newmtl White_1
+Kd 1.000000 1.000000 1.000000
+
+newmtl White_0
+Kd 1.000000 1.000000 1.000000
+map_Kd 572815-01-embed.jpg.jpg
